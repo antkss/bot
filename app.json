@@ -1,0 +1,32 @@
+{
+  "name": "Terminal Bot",
+  "description": "A simple terminal bot run on heroku.",
+  "env": {
+    "TOKEN": {
+      "description": "bot token from @BotFather",
+      "value": "5547562617:AAEozdOegXkZdVPTn9SelgQbMnssv29HQu0"
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org",
+      "value": "14316903"
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org",
+      "value": "c2a3eca54b40fb8c743d248a6720bd4d"
+    },
+    "AUTH_USERS": {
+      "description": "Username or ID of users to give access of the bot, Separate multiple users by space.",
+      "value": "5086425659"
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

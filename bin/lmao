@@ -1,0 +1,20 @@
+clear;
+if test -z "$1" 
+then
+      echo "You need to insert the download link !!"
+else
+      echo "WORKING, PLEASE WAIT!! gdrivetools by antk"
+      clear;
+aria2c $1 -d /app/downloads/;
+
+if [ -z "$(ls -A /app/downloads/)" ]; then
+clear;
+   echo "No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!"
+else
+clear;
+gdrive upload /app/downloads/* | tee so.txt;
+clear;
+cat -n so.txt | sed '1d' >m.txt; 
+cac.sh 
+fi 
+fi

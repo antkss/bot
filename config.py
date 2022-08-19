@@ -1,7 +1,5 @@
 import os
 import re
-import subprocess
-subprocess.run(["export PATH=$PATH:/app/bin"])
 id_pattern = re.compile(r'^.\d+$')
 
 

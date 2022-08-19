@@ -4,7 +4,7 @@
   "env": {
     "TOKEN": {
       "description": "bot token from @BotFather",
-      "value": "5547562617:AAEozdOegXkZdVPTn9SelgQbMnssv29HQu0"
+      "value": "5205658484:AAG40ye7AKR1EKGqh0MRi6xXmrJFPAL90qE"
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org",

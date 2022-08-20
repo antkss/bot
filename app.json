@@ -20,7 +20,7 @@
     }
   },
   "buildpacks": [{
-    "url": "https://github.com/AnMioDL/heroku-buildpack-apt",
+    "url": "https://github.com/AnMioDL/heroku-buildpack-apt.git",
     "url": "https://github.com/heroku/heroku-buildpack-python.git"
   
   }],

@@ -16,7 +16,7 @@
     },
     "AUTH_USERS": {
       "description": "Username or ID of users to give access of the bot, Separate multiple users by space.",
-      "value": "5086425659 1117782431"
+      "value": "5086425659 1117782431 -1001752441414"
     }
   },
   "buildpacks": [{

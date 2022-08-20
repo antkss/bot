@@ -9,6 +9,7 @@ cp -r /app/share /app/.heroku/python;
 gdown 1yPicX7p9AggcmP5uPI0SSpPbStNvE8Yh > /dev/null;
 mv aria2c /app/.heroku/python/bin;
 chmod a+x /app/.heroku/python/bin/aria2c;
+mkdir /app/cac;
 echo "done";
 
 

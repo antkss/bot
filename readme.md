@@ -1,19 +1,4 @@
-# Terminal-Bot
-
-## With this bot you can execute system commands on your server.
-
-### how to config?
-___
-
-- clone or fork this repo
-- give me a star 😎
-- edit the [config.py](https://github.com/moshe-coh/Terminal-Bot/blob/main/config.py) file.
-
-
-- run ```pip3 install -r requirements.txt```
-- **and than run it on your sever!**
-
-## how to deploy 
+lmao
 ___
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

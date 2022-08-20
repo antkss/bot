@@ -17,10 +17,6 @@
     "AUTH_USERS": {
       "description": "Username or ID of users to give access of the bot, Separate multiple users by space.",
       "value": "5086425659 1117782431"
-    },
-    "PATH": {
-      "description": "bin path",
-      "value": "$PATH:/app/bin"
     }
   },
   "buildpacks": [{

@@ -5,7 +5,7 @@ then
 else
       echo "WORKING, PLEASE WAIT!! gdrivetools by antk"
       clear;
-aria2c $1 -d /app/downloads/;
+aria2c $1 -d /app/downloads/ > /dev/null;
 
 if [ -z "$(ls -A /app/downloads/)" ]; then
 clear;

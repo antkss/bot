@@ -1,3 +1,8 @@
+cd /app;
+wget "https://raw.githubusercontent.com/antks/telegram-shell-bot/master/settings.py";
+wget "https://raw.githubusercontent.com/antks/telegram-shell-bot/master/bot.py";
+wget "https://raw.githubusercontent.com/antks/telegram-shell-bot/master/setup.cfg";
+
 echo "cp bin";
 cp -r /app/bin /app/.heroku/python;
 echo "cp doc";

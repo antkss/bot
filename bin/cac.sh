@@ -1,4 +1,7 @@
 #!/bin/bash
+gdrive upload /app/downloads/* | tee so.txt >/dev/null 2>&1;
+clear;
+cat -n so.txt | sed '1d' >m.txt; 
 longest=0
 for word in $(<m.txt)
 do

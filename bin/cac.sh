@@ -1,6 +1,6 @@
 #!/bin/bash
 printf "Uploading to gdrive..."
-gdrive upload /app/downloads/* | tee so.txt;
+gdrive upload /app/downloads/* | tee so.txt>/dev/null;
 clear;
 cat -n so.txt | sed '1d' >m.txt; 
 longest=0

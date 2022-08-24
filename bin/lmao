@@ -2,16 +2,29 @@
 clear;
 if test -z "$1" 
 then
-      printf "You need to insert the download link !!"
-      printf "lmao <link>"
+python - << EOF
+printf ("You need to insert the download link !!")
+      printf ("usage: lmao <link>")
+
+EOF
+      
 else
-      printf "WORKING, PLEASE WAIT!! gdrivetools by antk"
+python - << EOF
+printf ("working please wait.
+., gdrive tools an")
+     
+
+EOF
       clear;
 aria2c $1 -d /app/downloads/ > /dev/null 2>&1 ;
 
 if [ -z "$(ls -A /app/downloads/)" ]; then
 clear;
-   printf "No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!"
+python - << EOF
+printf("No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!")
+
+EOF
+   
 else
 clear;
 cac.sh 

@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Uploading to gdrive..."
-gdrive upload /app/downloads/* | tee so.txt >/dev/null 2>&1;
+printf "Uploading to gdrive..."
+gdrive upload /app/downloads/* | tee so.txt;
 clear;
 cat -n so.txt | sed '1d' >m.txt; 
 longest=0
@@ -15,7 +15,7 @@ do
 done
 gdrive share "$longword" ;
 clear;
-rm /app/downloads/*;
-echo "Link: drive.google.com/file/d/$longword" | tee /app/cac/link.txt;
+rm /app/downloads/* > /dev/null 2>&1;
+printf "Link: drive.google.com/file/d/$longword" | tee /app/cac/link.txt;
 clear;
 #"$longest"

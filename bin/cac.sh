@@ -1,6 +1,6 @@
 #!/bin/bash
 python - << EOF
-printf("Uploading file...")
+print("Uploading file...")
 EOF
 gdrive upload /app/downloads/* | tee so.txt>/dev/null;
 clear;

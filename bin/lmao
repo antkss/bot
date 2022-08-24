@@ -2,15 +2,16 @@
 clear;
 if test -z "$1" 
 then
-      echo "You need to insert the download link !!"
+      printf "You need to insert the download link !!"
+      printf "lmao <link>"
 else
-      echo "WORKING, PLEASE WAIT!! gdrivetools by antk"
+      printf "WORKING, PLEASE WAIT!! gdrivetools by antk"
       clear;
 aria2c $1 -d /app/downloads/ > /dev/null 2>&1 ;
 
 if [ -z "$(ls -A /app/downloads/)" ]; then
 clear;
-   echo "No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!"
+   printf "No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!"
 else
 clear;
 cac.sh 

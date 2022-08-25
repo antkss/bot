@@ -2,7 +2,7 @@
 clear;
 if test -z "$1" 
 then
-printf "You need to insert the download link !!")
+printf "You need to insert the download link !!"
       printf "usage: lmao <link>"
 else
 echo "working please wait...";

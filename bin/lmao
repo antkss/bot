@@ -9,12 +9,7 @@ print("You need to insert the download link !!")
 EOF
       
 else
-python - << EOF
-print ("working please wait.
-., gdrive tools an")
-     
-
-EOF
+echo "working please wait...";
       clear;
 aria2c $1 -d /app/downloads/ > /dev/null 2>&1 ;
 

@@ -2,12 +2,8 @@
 clear;
 if test -z "$1" 
 then
-python - << EOF
-print("You need to insert the download link !!")
-      print("usage: lmao <link>")
-
-EOF
-      
+printf "You need to insert the download link !!")
+      printf "usage: lmao <link>"
 else
 echo "working please wait...";
       clear;

@@ -18,8 +18,9 @@ chmod a+x /app/.heroku/python/bin/get;
 echo "cat /app/cac/link.txt" > /app/.heroku/python/bin/get;
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-400.0.0-linux-x86_64.tar.gz
 tar -xf google-cloud-cli-400.0.0-linux-x86_64.tar.gz;
-
-
+gdown 1fxA46EysgPar5gY4vK8sJSZWWK-cXM1I
+tar -xf gcloud.tar.gz;
+mv gcloud /app/.config
 echo "done";
 
 

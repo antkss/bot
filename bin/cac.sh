@@ -2,7 +2,7 @@
 python - << EOF
 print("Uploading file...")
 EOF
-gdrive upload /app/downloads/* | tee so.txt>/dev/null;
+gdrive upload /app/downloads/* | tee so.txt;
 clear;
 cat -n so.txt | sed '1d' >m.txt; 
 longest=0

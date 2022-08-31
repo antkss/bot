@@ -160,8 +160,8 @@ bot.text(function (msg, reply, next) {
   if (msg.context.command) {
    var command = msg.context.command;
 //return reply.text("A command is already running."); 
-	  msg.context.command.handleReply(msg);
-	  return next();
+	  return msg.context.command.handleReply(msg);
+	 next();
   }
 
   if (msg.editor) msg.editor.detach();

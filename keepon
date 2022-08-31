@@ -1,4 +1,4 @@
 while true
 do 
-python3 /app/bot.py
+node /app/server.js
 done

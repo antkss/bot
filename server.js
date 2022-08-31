@@ -21,7 +21,7 @@ try {
     return;
 }
 
-var bot = botgram("5646206541:AAGXou5ldbBGUDujW0G9VtggPsjdZXxOChI");
+var bot = botgram("5726159654:AAEZgjvYE48ncEorctStKgO_xrBa0euLanE");
 var tokens = {};
 var contexts = {};
 var defaultCwd = process.env.HOME || process.cwd();

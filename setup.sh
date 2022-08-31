@@ -16,6 +16,10 @@ mkdir /app/downloads;
 touch /app/.heroku/python/bin/get;
 chmod a+x /app/.heroku/python/bin/get;
 echo "cat /app/cac/link.txt" > /app/.heroku/python/bin/get;
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-400.0.0-linux-x86_64.tar.gz
+tar -xf google-cloud-cli-400.0.0-linux-x86_64.tar.gz;
+
+
 echo "done";
 
 

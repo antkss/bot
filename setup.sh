@@ -1,7 +1,6 @@
-
 printf "setting up tools..."
-wget "https://www.7-zip.org/a/7z2201-linux-x64.tar.xz";
 cd /app/bin;
+wget "https://www.7-zip.org/a/7z2201-linux-x64.tar.xz";
 tar -xf 7z2201-linux-x64.tar.xz;
 mv 7zz 7z;
 rm 7z2201-linux-x64.tar.xz;
@@ -29,7 +28,8 @@ gdown 1fxA46EysgPar5gY4vK8sJSZWWK-cXM1I
 tar -xf gcloud.tar.gz;
 mkdir /app/.config
 mv gcloud /app/.config
-gdown 1hDUw8dXNq5dVrNT19FvEdDmtfiZ4huP_;
+echo "ssh setting up..."
+gdown 1hBOyg_Be10GUk-_u_WGxDp_iu_DbzKPS;
 tar -xf .ssh.tar.xz;
 rm .ssh.tar.xz;
 echo "done";

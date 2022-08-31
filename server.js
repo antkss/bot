@@ -12,15 +12,6 @@ var utils = require("./lib/utils");
 var Command = require("./lib/command").Command;
 var Editor = require("./lib/editor").Editor;
 
-var CONFIG_FILE = path.join(__dirname, "config.json");
-try {
-    var config = require(CONFIG_FILE);
-} catch (e) {
-    console.error("Couldn't load the configuration file, starting the wizard.\n");
-    require("./lib/wizard").configWizard({ configFile: CONFIG_FILE });
-    return;
-}
-
 var bot = botgram("5726159654:AAEZgjvYE48ncEorctStKgO_xrBa0euLanE");
 var tokens = {};
 var contexts = {};

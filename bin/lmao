@@ -4,10 +4,9 @@ then
 printf "You need to insert the download link !!  "
       printf "usage: lmao <link>"
 else
-clear;
 echo "working please wait...";
 aria2c $1 -d /app/downloads/ ;
-
+clear;
 if [ -z "$(ls -A /app/downloads/)" ]; then
 python - << EOF
 print("No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!")

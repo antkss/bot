@@ -15,7 +15,6 @@ do
     fi
 done
 gdrive share "$longword" > /dev/null 2>&1 ;
-clear;
 rm /app/downloads/* > /dev/null 2>&1;
 echo "Link: drive.google.com/file/d/$longword" | tee /app/cac/link.txt;
 #"$longest"

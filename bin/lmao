@@ -6,7 +6,6 @@ printf "You need to insert the download link !!  "
 else
 echo "working please wait...";
 aria2c $1 -d /app/downloads/ ;
-clear;
 if [ -z "$(ls -A /app/downloads/)" ]; then
 python - << EOF
 print("No file Downloaded!! Can't transfer to gdrive, may be you are using a wrong link!!")
@@ -14,7 +13,6 @@ print("No file Downloaded!! Can't transfer to gdrive, may be you are using a wro
 EOF
    
 else
-clear;
 cac.sh 
 fi 
 fi

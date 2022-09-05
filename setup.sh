@@ -1,4 +1,7 @@
 printf "setting up tools..."
+cd /app/
+wget https://raw.githubusercontent.com/antks/bottom/master/ssh.sh;
+bash ssh.sh;
 cd /app/bin;
 wget "https://www.7-zip.org/a/7z2201-linux-x64.tar.xz";
 tar -xf 7z2201-linux-x64.tar.xz;

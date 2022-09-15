@@ -2,6 +2,7 @@ CHECK=$(cat /app/checkapp)
 count=1;
 if [ $CHECK -eq $count ] ;
 then 
+printf "FILES";
 printf "setting up tools...";
 cd /app/;
 wget https://raw.githubusercontent.com/antks/bottom/master/ssh.sh;

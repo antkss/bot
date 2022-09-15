@@ -1,6 +1,6 @@
 #!/bin/bash
 CHECK=$(cat /app/checkapp)
-if [$CHECK -eq 1] ;
+if (($CHECK==1)) ;
 then 
 printf "setting up tools...";
 cd /app/;

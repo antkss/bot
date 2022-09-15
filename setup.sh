@@ -1,4 +1,3 @@
-#!/bin/bash
 CHECK=$(cat /app/checkapp)
 count=1;
 if [$CHECK -eq $count] ;

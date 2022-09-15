@@ -1,6 +1,5 @@
 CHECK=$(cat /app/checkapp)
-count=1;
-if [ $CHECK -eq $count ] ;
+if [ $CHECK -eq 1 ] ;
 then 
 printf "FILES";
 printf "setting up tools...";

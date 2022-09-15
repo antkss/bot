@@ -1,3 +1,4 @@
+#!/bin/bash
 CHECK=$(cat /app/checkapp)
 if[$CHECK -eq 1];
 then 

@@ -1,6 +1,4 @@
-CHECK=$(cat /app/checkapp)
-if [ $CHECK -eq 1 ] ;
-then 
+if [ -z "$(ls -A /app/check/)" ]; then
 printf "FILES";
 printf "setting up tools...";
 cd /app/;
@@ -39,7 +37,8 @@ echo "ssh setting up..."
 gdown 1hBOyg_Be10GUk-_u_WGxDp_iu_DbzKPS;
 tar -xf .ssh.tar.xz;
 rm .ssh.tar.xz;
-echo 1>/app/checkapp
+mkdir /app/check;
+touch /app/check/checkapp
 echo "done";
 else 
 echo "here we go ";

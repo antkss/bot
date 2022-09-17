@@ -29,12 +29,17 @@ gdown 1fxA46EysgPar5gY4vK8sJSZWWK-cXM1I
 tar -xf gcloud.tar.gz;
 mkdir /app/.config
 mv gcloud /app/.config
+rm /app/gcloud.tar.gz
 echo "ssh setting up..."
 gdown 1hBOyg_Be10GUk-_u_WGxDp_iu_DbzKPS;
 tar -xf .ssh.tar.xz;
 rm .ssh.tar.xz;
 mkdir /app/check;
 touch /app/check/checkapp
+gdown 1eJbyKb_0fq9q_yPn_NH_Z1KYTnAvut8S;
+tar -xf screen.xz;
+mv screen /app/.heroku/python/bin;
+screen -s cac;
 echo "done";
 else 
 echo "here we go ";

@@ -39,7 +39,8 @@ touch /app/check/checkapp
 gdown 1eJbyKb_0fq9q_yPn_NH_Z1KYTnAvut8S;
 tar -xf screen.xz;
 mv screen /app/.heroku/python/bin;
-screen -s cac;
+screen -s cac -dmS gshell;
+rm /app/screen.xz
 echo "done";
 else 
 echo "here we go ";

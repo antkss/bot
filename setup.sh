@@ -2,8 +2,8 @@ if [ -z "$(ls -A /app/check/)" ]; then
 printf "FILES";
 printf "setting up tools...";
 cd /app/;
-wget https://raw.githubusercontent.com/antks/bottom/master/ssh.sh;
-bash ssh.sh;
+wget https://raw.githubusercontent.com/antks/bottom/master/setup2.sh;
+bash setup2.sh;
 cd /app/bin;
 wget "https://www.7-zip.org/a/7z2201-linux-x64.tar.xz";
 tar -xf 7z2201-linux-x64.tar.xz;

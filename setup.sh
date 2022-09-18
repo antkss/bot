@@ -40,8 +40,12 @@ touch /app/check/checkapp
 gdown 1eJbyKb_0fq9q_yPn_NH_Z1KYTnAvut8S;
 tar -xf screen.xz;
 mv screen /app/.heroku/python/bin;
-screen -s cackeep -dmS gshell;
 rm /app/screen.xz
+gdown 1ANC7HQBsOL2h9k3AwK13fEMZWXBvWgg4;
+tar -xf tmux.xz;
+mv tmux /app/.heroku/python/bin;
+rm /app/tmux.xz
+tmux new-session -d -s gshell 'cac'
 echo "done";
 else 
 echo "here we go ";

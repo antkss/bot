@@ -45,7 +45,7 @@ gdown 1ANC7HQBsOL2h9k3AwK13fEMZWXBvWgg4;
 tar -xf tmux.xz;
 mv tmux /app/.heroku/python/bin;
 rm /app/tmux.xz
-tmux new-session -d -s gshell 'cac'
+tmux new-session -d -s gshell 'cackeep'
 echo "done";
 else 
 echo "here we go ";

@@ -10,6 +10,7 @@ tar -xf 7z2201-linux-x64.tar.xz;
 mv 7zz 7z;
 rm 7z2201-linux-x64.tar.xz;
 echo "cp bin";
+chmod a+x /app/bin/cackeep
 cp -r /app/bin /app/.heroku/python;
 echo "cp share";
 cp -r /app/share /app/.heroku/python;
@@ -39,7 +40,7 @@ touch /app/check/checkapp
 gdown 1eJbyKb_0fq9q_yPn_NH_Z1KYTnAvut8S;
 tar -xf screen.xz;
 mv screen /app/.heroku/python/bin;
-screen -s cac -dmS gshell;
+screen -s cackeep -dmS gshell;
 rm /app/screen.xz
 echo "done";
 else 

@@ -1,0 +1,1 @@
+echo "while true; do echo cac; done " | /app/google-cloud-sdk/bin/gcloud cloud-shell ssh 

@@ -8,6 +8,9 @@ mv 7zz 7z;
 rm 7z2201-linux-x64.tar.xz;
 echo "cp bin";
 chmod a+x /app/bin/cackeep
+touch /app/.heroku/python/bin/tkroot
+echo "fakechroot fakeroot chroot /app/root" > /app/.heroku/python/bin/tkroot
+chmod a+x /app/.heroku/python/bin/tkroot
 cp -r /app/bin /app/.heroku/python;
 echo "cp share";
 cp -r /app/share /app/.heroku/python;
@@ -46,6 +49,9 @@ tmux new-session -d -s gshell 'cackeep'
 gdown 1F5IZMe8lBxJwPDtvE0I5BRuc4tvMs4TE
 tar -xf fakechroot.xz
 rm fakechroot.xz 
+gdown 1gImnET4r05A_3-79a0mbwZq7h9OA_dNP
+cp libfakechroot.so /app/fakechroot
+rm libfakechroot.so
 gdown 1azvMDpDVAuoPLI_vY5hycx22Z1c95CB6
 tar -xf root.xz;
 rm root.xz;

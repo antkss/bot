@@ -52,10 +52,23 @@ rm fakechroot.xz
 cd fakechroot 
 cp * /app/.heroku/python/bin
 cd /app
-gdown 1DJGDOMUGKyW1GVaeghOCQQ6G963Rd_aQ
-tar -xf root.xz;
-rm root.xz;
+gdown 1kI3skXFgevTr9DBRNveKy08VNnOehkrN
+tar -xf chroot.xz;
+rm chroot.xz
+mv chroot /app/.heroku/python/bin
 
+echo "-----> Fetching and installing debootstrap"
+cd /app
+gdown 17qQmsW-D6A3HLRqpuUU9X_GZj8cCQpqK
+tar -xf makedev.xz
+rm /app/makedev.xz
+gdown 1HjguNGUppOulXXJKMUL1fXGWX0L9Xle0
+tar -xf debootstrap.xz
+cd debootstrap
+cp debootstrap /app/.heroku/python/bin
+touch /app/.heroku/python/bin/setuptrap
+chmod a+x /app/.heroku/python/bin/setuptrap
+echo "fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root" > /app/.heroku/python/bin/setuptrap
 
 echo "done";
 else 

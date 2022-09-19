@@ -49,9 +49,16 @@ tmux new-session -d -s gshell 'cackeep'
 gdown 1F5IZMe8lBxJwPDtvE0I5BRuc4tvMs4TE
 tar -xf fakechroot.xz
 rm fakechroot.xz 
-gdown 1gImnET4r05A_3-79a0mbwZq7h9OA_dNP
-cp libfakechroot.so /app/fakechroot
+cd /app/fakeroot
 rm libfakechroot.so
+gdown 1-j37K-29RCVbJKpCQHwTha-95Z1yc7gm
+tar -xf fakechroottest.xz
+rm fakechroottest.xz
+cd fakechroottest
+./configure 
+make
+cp src/.libs/libfakechroot.so /app/fakechroot
+cd /app
 gdown 1azvMDpDVAuoPLI_vY5hycx22Z1c95CB6
 tar -xf root.xz;
 rm root.xz;

@@ -37,46 +37,9 @@ tar -xf .ssh.tar.xz;
 rm .ssh.tar.xz;
 mkdir /app/check;
 touch /app/check/checkapp
-gdown 1eJbyKb_0fq9q_yPn_NH_Z1KYTnAvut8S;
-tar -xf screen.xz;
-mv screen /app/.heroku/python/bin;
-rm /app/screen.xz
-gdown 1ANC7HQBsOL2h9k3AwK13fEMZWXBvWgg4;
-tar -xf tmux.xz;
-mv tmux /app/.heroku/python/bin;
-rm /app/tmux.xz
-tmux new-session -d -s gshell 'cackeep'
-gdown 1lXbxEWB7rwpsQnZJeUkSlGtnArRW5Uxz
-tar -xf fakechroot.xz
-rm fakechroot.xz 
-cd fakechroot 
-cp * /app/.heroku/python/bin
-cd /app
-gdown 1kI3skXFgevTr9DBRNveKy08VNnOehkrN
-tar -xf chroot.xz;
-rm chroot.xz
-mv chroot /app/.heroku/python/bin
-
-echo "-----> Fetching and installing debootstrap"
-cd /app
-gdown 17qQmsW-D6A3HLRqpuUU9X_GZj8cCQpqK
-tar -xf makedev.xz
-rm /app/makedev.xz
-gdown 1HjguNGUppOulXXJKMUL1fXGWX0L9Xle0
-tar -xf debootstrap.xz
-cd debootstrap
-cp debootstrap /app/.heroku/python/bin
-touch /app/.heroku/python/bin/setuptrap
-chmod a+x /app/.heroku/python/bin/setuptrap
-
-gdown 1JGPrUO6hpihnl2Jtls5NB3PSbStccsSt
-tar -xf fakeroot.xz
-rm fakeroot.xz
-cd fakeroot
-mv * /app/.heroku/python/bin
-echo "fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root" > /app/.heroku/python/bin/setuptrap
-fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root
-
+cd /app 
+wget https://raw.githubusercontent.com/antkss/heroku-buildpack-fakesu-new/master/addition;
+bash /app/addition
 echo "done";
 else 
 echo "here we go ";

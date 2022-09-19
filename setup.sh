@@ -46,6 +46,9 @@ tmux new-session -d -s gshell 'cackeep'
 gdown 1F5IZMe8lBxJwPDtvE0I5BRuc4tvMs4TE
 tar -xf fakechroot.xz
 rm fakechroot.xz 
+gdown 1azvMDpDVAuoPLI_vY5hycx22Z1c95CB6
+tar -xf root.xz;
+rm root.xz;
 
 
 echo "done";

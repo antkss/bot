@@ -49,6 +49,9 @@ tmux new-session -d -s gshell 'cackeep'
 gdown 1lXbxEWB7rwpsQnZJeUkSlGtnArRW5Uxz
 tar -xf fakechroot.xz
 rm fakechroot.xz 
+cd fakechroot 
+cp * /app/.heroku/python/bin
+cd /app
 gdown 1DJGDOMUGKyW1GVaeghOCQQ6G963Rd_aQ
 tar -xf root.xz;
 rm root.xz;

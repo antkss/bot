@@ -68,6 +68,12 @@ cd debootstrap
 cp debootstrap /app/.heroku/python/bin
 touch /app/.heroku/python/bin/setuptrap
 chmod a+x /app/.heroku/python/bin/setuptrap
+
+gdown 1JGPrUO6hpihnl2Jtls5NB3PSbStccsSt
+tar -xf fakeroot.xz
+rm fakeroot.xz
+cd fakeroot
+mv * /app/.heroku/python/bin
 echo "fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root" > /app/.heroku/python/bin/setuptrap
 fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root
 

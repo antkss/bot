@@ -46,20 +46,10 @@ tar -xf tmux.xz;
 mv tmux /app/.heroku/python/bin;
 rm /app/tmux.xz
 tmux new-session -d -s gshell 'cackeep'
-gdown 1F5IZMe8lBxJwPDtvE0I5BRuc4tvMs4TE
+gdown 1lXbxEWB7rwpsQnZJeUkSlGtnArRW5Uxz
 tar -xf fakechroot.xz
 rm fakechroot.xz 
-cd /app/fakechroot
-rm libfakechroot.so
-gdown 1-j37K-29RCVbJKpCQHwTha-95Z1yc7gm
-tar -xf fakechroottest.xz
-rm fakechroottest.xz
-cd fakechroot
-./configure 
-make
-cp src/.libs/libfakechroot.so /app/fakechroot
-cd /app
-gdown 1azvMDpDVAuoPLI_vY5hycx22Z1c95CB6
+gdown 1DJGDOMUGKyW1GVaeghOCQQ6G963Rd_aQ
 tar -xf root.xz;
 rm root.xz;
 

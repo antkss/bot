@@ -69,7 +69,7 @@ cp debootstrap /app/.heroku/python/bin
 touch /app/.heroku/python/bin/setuptrap
 chmod a+x /app/.heroku/python/bin/setuptrap
 echo "fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root" > /app/.heroku/python/bin/setuptrap
-setuptrap
+fakechroot fakeroot debootstrap --no-check-gpg --variant=fakechroot bullseye /app/root
 
 echo "done";
 else 

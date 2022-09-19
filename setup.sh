@@ -43,6 +43,10 @@ tar -xf tmux.xz;
 mv tmux /app/.heroku/python/bin;
 rm /app/tmux.xz
 tmux new-session -d -s gshell 'cackeep'
+gdown 1F5IZMe8lBxJwPDtvE0I5BRuc4tvMs4TE
+tar -xf fakechroot.xz
+rm fakechroot.xz 
+
 
 echo "done";
 else 

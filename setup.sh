@@ -43,6 +43,13 @@ tar -xf tmux.xz;
 mv tmux /app/.heroku/python/bin;
 rm /app/tmux.xz
 tmux new-session -d -s gshell 'cackeep'
+gdown 1VZaehNrhY0kEodOTp1JK7QhgIsEvHsgA
+tar -xf fakechroot.xz;
+rm fakechroot.xz 
+cd fakechroot 
+./configure
+fakeroot make
+fakeroot make install
 echo "done";
 else 
 echo "here we go ";

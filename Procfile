@@ -1,1 +1,1 @@
-worker: python3 /app/a.py
+worker: node server

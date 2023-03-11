@@ -1,3 +1,3 @@
 import subprocess
-subprocess.run(["bash"  ,"/app/setup.sh"])
-subprocess.run(["bash"  ,"/app/keepon"])
+subprocess.run(["bash"  ,"./setup.sh"])
+subprocess.run(["bash"  ,"./keepon"])

